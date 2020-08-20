@@ -10,10 +10,9 @@ import com.ironz.binaryprefs.encryption.XorKeyEncryption;
 
 public class SharedPreferencesWrapper {
 
-    private static String sharedPreferencesName = "ParkingSharedPreferences";
     private static SharedPreferences sharedPreferences;
 
-    public static void init(Context context) {
+    public static void init(Context context, String sharedPreferencesName) {
         String key = context.getApplicationInfo().packageName;
         String shortKey = context.getApplicationInfo().packageName.substring(0, 16);
         sharedPreferences = new BinaryPreferencesBuilder(context)
