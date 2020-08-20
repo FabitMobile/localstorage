@@ -1,4 +1,4 @@
-package parking.ru.localstorage;
+package ru.fabit.localstorage;
 
 import android.content.Context;
 import android.content.SharedPreferences;

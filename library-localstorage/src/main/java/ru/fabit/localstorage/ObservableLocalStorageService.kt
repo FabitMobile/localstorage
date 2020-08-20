@@ -1,4 +1,4 @@
-package parking.ru.localstorage
+package ru.fabit.localstorage
 
 
 import io.reactivex.Completable
