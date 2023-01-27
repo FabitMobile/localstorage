@@ -43,4 +43,6 @@ public interface LocalStorageService {
     <K> List<K> getList(String key, Class<K> type);
 
     <K> void saveList(String key, List<K> list);
+
+    void clearAll();
 }
