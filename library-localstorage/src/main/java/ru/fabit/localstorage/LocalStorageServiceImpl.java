@@ -206,5 +206,12 @@ public class LocalStorageServiceImpl implements LocalStorageService {
         }
     }
 
+    @Override
+    public void clearAll() {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.clear();
+        editor.apply();
+    }
+
     //endregion
 }
